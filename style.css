@@ -1,0 +1,172 @@
+/* Color & Font Configurations */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f6f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header/Hero Section */
+.hero {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin: 0 0 10px 0;
+  letter-spacing: 1px;
+}
+
+.hero .subtitle {
+  font-size: 1.3rem;
+  color: #d1d8e0;
+  margin-bottom: 20px;
+}
+
+.contact-links a {
+  color: #f1f2f6;
+  text-decoration: none;
+  margin: 0 10px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.contact-links a:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Navigation Menu */
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  background-color: #1e3c72;
+  padding: 15px 0;
+  text-align: center;
+  z-index: 1000;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.sticky-nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.sticky-nav a:hover {
+  color: #3ae374;
+}
+
+/* Layout Cards */
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  margin: 40px auto;
+}
+
+.card h2 {
+  color: #1e3c72;
+  border-bottom: 2px solid #2a5298;
+  padding-bottom: 8px;
+  margin-top: 0;
+}
+
+/* Grids and Layout systems */
+.grid-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.grid-three-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+/* Tags & Lists */
+.interests-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.interest-tag {
+  background-color: #e3faf2;
+  color: #20b2aa;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* Custom Scroll Box for publications & events */
+.scroll-box {
+  max-height: 400px;
+  overflow-y: auto;
+  border: 1px solid #e1e8ed;
+  padding: 15px;
+  background-color: #fafbfc;
+  border-radius: 6px;
+}
+
+/* Academic Timeline styling */
+.timeline {
+  list-style: none;
+  padding: 0;
+}
+
+.timeline li {
+  margin-bottom: 20px;
+  padding-left: 15px;
+  border-left: 3px solid #1e3c72;
+}
+
+.time-date {
+  display: block;
+  font-size: 0.85rem;
+  color: #7f8c8d;
+  font-weight: bold;
+}
+
+.location {
+  display: block;
+  color: #2c3e50;
+  font-style: italic;
+}
+
+/* Footer style */
+footer {
+  text-align: center;
+  padding: 30px 0;
+  background-color: #1e3c72;
+  color: #a5b1c2;
+  font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .grid-two-col, .grid-three-col {
+    grid-template-columns: 1fr;
+  }
+}
